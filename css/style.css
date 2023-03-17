@@ -1,0 +1,113 @@
+.menu {
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+  height: 100vh;
+  border: 1px solid red;
+  background: cornflowerblue; }
+  .menu img {
+    width: 100%; }
+  .menu_content {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .menu_skills {
+    border: 1px solid black;
+    margin-bottom: 0;
+    text-align: left; }
+    .menu_skills-html {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-html .html_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-html .html_line-actual {
+          background: red;
+          width: 20%;
+          height: 100%; }
+    .menu_skills-scss {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-scss .scss_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-scss .scss_line-actual {
+          background: red;
+          width: 20%;
+          height: 100%; }
+    .menu_skills-javascript {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-javascript .javascript_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-javascript .javascript_line-actual {
+          background: red;
+          width: 0%;
+          height: 100%; }
+    .menu_skills-autocad {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-autocad .autocad_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-autocad .autocad_line-actual {
+          background: red;
+          width: 80%;
+          height: 100%; }
+    .menu_skills-sketchup {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-sketchup .sketchup_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-sketchup .sketchup_line-actual {
+          background: red;
+          width: 80%;
+          height: 100%; }
+    .menu_skills-dsmax {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-dsmax .dsmax_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-dsmax .dsmax_line-actual {
+          background: red;
+          width: 50%;
+          height: 100%; }
+    .menu_skills-photoshop {
+      width: 100%;
+      height: 3.5vh;
+      margin-top: 5%; }
+      .menu_skills-photoshop .photoshop_line {
+        height: 5px;
+        background: rebeccapurple; }
+        .menu_skills-photoshop .photoshop_line-actual {
+          background: red;
+          width: 50%;
+          height: 100%; }
+  .menu .studies {
+    border: 1px solid black;
+    text-align: center;
+    height: 25vh; }
+
+.background {
+  display: inline-block;
+  height: 100vh;
+  border: solid 1px black;
+  background: cornflowerblue; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat; }
