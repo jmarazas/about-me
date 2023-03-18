@@ -1,5 +1,6 @@
-@import "./navigation";
+@import "./menu";
 @import "./background";
+@import "./typography";
 
 
 
@@ -7,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: montserrat;
 }
 
+.content {
+    display: flex;
+    background: linear-gradient(to right, #3d7eaa, #ffe47a);}

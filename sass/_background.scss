@@ -1,0 +1,112 @@
+.background {
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-grow: 1;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-gap: 1%;
+    padding: 1%;
+
+    height: 100vh;
+    // border: solid 1px black;
+    // background: cornflowerblue;
+
+    &_image-box {
+        // height: 33.333333%;
+        // width: 33.333333%;
+        // border: solid 1px red;
+        position: relative;
+        cursor: pointer;
+        transition: .3s;
+    
+    }
+
+
+  }
+  
+  .img-1 {
+    background: url("../img/1.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .img-2 {
+    background: url("../img/2.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .img-3 {
+    background: url("../img/3.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .img-4 {
+    background: url("../img/4.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .img-5 {
+    background: url("../img/5.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+
+  .img-6 {
+    background: url("../img/6.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .img-7 {
+    background: url("../img/7.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .img-8 {
+    background: url("../img/8.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .img-9 {
+    background: url("../img/9.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+
+  .background:hover .background_image-box:not(:hover) {
+    filter: grayscale(100%);
+    opacity: .6;
+    // filter: blur(.08vh);
+  }
+  
+  .background:hover .background_image-box:not(:hover)::after {
+    background-color: rgba(#000, .4);
+  }
+  
+  @media (min-width: 30rem) {
+    .background {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+  }
+  
+
+  .background_image-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0);
+    transition: .3s;
+  }  

@@ -1,32 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .menu {
-  display: inline-block;
-  text-align: center;
-  width: 15%;
-  height: 100vh;
-  border: 1px solid red;
-  background: cornflowerblue; }
-  .menu img {
-    width: 100%; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 15vw;
+  height: 100vh; }
+  .menu .portrait-image {
+    background-image: url("../img/portrait.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 17vh;
+    border-radius: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+  .menu h2 {
+    text-align: center; }
+  .menu h3 {
+    margin-bottom: 1vh; }
   .menu_content {
     display: block;
-    margin: auto;
-    width: 80%;
-    height: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%; }
+    padding: 1vw;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%; }
   .menu_skills {
-    border: 1px solid black;
-    margin-bottom: 0;
-    text-align: left; }
+    width: 100%;
+    border-radius: 0.5vw;
+    padding: 1vh;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
     .menu_skills-html {
       width: 100%;
-      height: 3.5vh;
-      margin-top: 5%; }
+      height: 3.5vh; }
       .menu_skills-html .html_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-html .html_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 20%;
           height: 100%; }
     .menu_skills-scss {
@@ -35,9 +47,9 @@
       margin-top: 5%; }
       .menu_skills-scss .scss_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-scss .scss_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 20%;
           height: 100%; }
     .menu_skills-javascript {
@@ -46,9 +58,9 @@
       margin-top: 5%; }
       .menu_skills-javascript .javascript_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-javascript .javascript_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 0%;
           height: 100%; }
     .menu_skills-autocad {
@@ -57,9 +69,9 @@
       margin-top: 5%; }
       .menu_skills-autocad .autocad_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-autocad .autocad_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 80%;
           height: 100%; }
     .menu_skills-sketchup {
@@ -68,9 +80,9 @@
       margin-top: 5%; }
       .menu_skills-sketchup .sketchup_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-sketchup .sketchup_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 80%;
           height: 100%; }
     .menu_skills-dsmax {
@@ -79,9 +91,9 @@
       margin-top: 5%; }
       .menu_skills-dsmax .dsmax_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-dsmax .dsmax_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 50%;
           height: 100%; }
     .menu_skills-photoshop {
@@ -90,24 +102,119 @@
       margin-top: 5%; }
       .menu_skills-photoshop .photoshop_line {
         height: 5px;
-        background: rebeccapurple; }
+        background: linear-gradient(to right, #1f21b6, #4c7dda); }
         .menu_skills-photoshop .photoshop_line-actual {
-          background: red;
+          background: linear-gradient(to right, #ff0000, #fa4343);
           width: 50%;
           height: 100%; }
   .menu .studies {
-    border: 1px solid black;
     text-align: center;
-    height: 25vh; }
+    margin-top: 1vh;
+    padding: 1vh;
+    border-radius: 0.5vw;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+    .menu .studies h4 {
+      margin-top: 0.5vh; }
 
 .background {
-  display: inline-block;
-  height: 100vh;
-  border: solid 1px black;
-  background: cornflowerblue; }
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1%;
+  height: 100vh; }
+  .background_image-box {
+    position: relative;
+    cursor: pointer;
+    transition: .3s; }
+
+.img-1 {
+  background: url("../img/1.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-2 {
+  background: url("../img/2.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-3 {
+  background: url("../img/3.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-4 {
+  background: url("../img/4.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-5 {
+  background: url("../img/5.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-6 {
+  background: url("../img/6.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-7 {
+  background: url("../img/7.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-8 {
+  background: url("../img/8.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.img-9 {
+  background: url("../img/9.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.background:hover .background_image-box:not(:hover) {
+  filter: grayscale(100%);
+  opacity: .6; }
+
+.background:hover .background_image-box:not(:hover)::after {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+@media (min-width: 30rem) {
+  .background {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+.background_image-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: .3s; }
+
+main {
+  font-family: 'roboto';
+  font-size: 1.2vh;
+  color: #0a1233; }
+
+h2 {
+  font-size: 2vh;
+  font-weight: 900;
+  color: #0a1233; }
+
+h4 {
+  font-size: 1.38vh;
+  color: #0a1233; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: montserrat; }
+  box-sizing: border-box; }
+
+.content {
+  display: flex;
+  background: linear-gradient(to right, #3d7eaa, #ffe47a); }
