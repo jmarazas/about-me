@@ -5,7 +5,7 @@
     display: grid;
     width: 100%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     // grid-gap: 1%;
     padding: 1%;
 
@@ -81,6 +81,23 @@
     background-position: bottom;
   }
 
+  .img-10 {
+    background: url("../img/10.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .img-11 {
+    background: url("../img/11.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .img-12 {
+    background: url("../img/12.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
 
   .background:hover .background_image-box:not(:hover) {
     filter: grayscale(100%);
@@ -95,7 +112,7 @@
   @media (min-width: 30rem) {
     .background {
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         }
   }
   
